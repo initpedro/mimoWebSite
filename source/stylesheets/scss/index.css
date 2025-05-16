@@ -1,0 +1,532 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: opacity 0.8s ease-out, -webkit-transform 0.8s ease-out, -webkit-filter 0.8s ease-out;
+  transition: opacity 0.8s ease-out, -webkit-transform 0.8s ease-out, -webkit-filter 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out, -webkit-transform 0.8s ease-out, -webkit-filter 0.8s ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff8f6;
+  background-image: url(https://i.postimg.cc/tJQDNhRP/fundo-ground-1.png);
+  opacity: 1;
+  width: 100%;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s ease-out;
+  transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s ease-out;
+  background-size: cover;
+}
+
+body.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a57765;
+  border-radius: 10px;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  font-size: 18px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  background-color: #fef3f1;
+  /* Fundo semitransparente */
+  z-index: 111;
+}
+
+#header .maxwidht {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1028px;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  z-index: 111;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.568);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #a57765;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+nav button {
+  border: #c58c84 1px solid;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #c58c84;
+  padding: 9px 17px;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
+  cursor: pointer;
+}
+
+nav button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #c58c84;
+  color: white;
+}
+
+.navbutton-contact {
+  border-radius: 2px;
+  background-color: #111;
+  color: #ffffff;
+  padding: 9px 17px;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
+  cursor: pointer;
+}
+
+.h2button .navbutton-contact:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #c58c84;
+  color: white;
+  border: #c58c84 1px solid;
+}
+
+#s-header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #916350;
+}
+
+#s-header .imgh2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s-header h2 {
+  max-width: 400px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+#s-header h2 h2 {
+  font-weight: 300;
+}
+
+#s-header button {
+  margin-left: 40px;
+}
+
+.multiText {
+  color: #d1a677;
+  font-weight: bold;
+}
+
+#subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  font-size: 18px;
+  position: -webkit-sticky;
+  position: sticky;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  background-color: #ffeeeb;
+  /* Fundo semitransparente */
+  margin-top: 80px;
+}
+
+#subheader img {
+  width: 100%;
+  height: 150px;
+}
+
+#produtos-geral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+  gap: 50px;
+}
+
+#produtos-meio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#produtos-meio h1 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+#produtos-meio h2 {
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 280px;
+}
+
+.navbutton-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 9px 200px;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.navbutton-footer:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #c58c84;
+  border: 1px solid #c58c84;
+  color: #ffffff;
+  /*  border: #ffffff; */
+}
+
+.buttonfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  font-size: 18px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #ffeeeb;
+  /* Fundo semitransparente */
+  margin-top: 80px;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  height: 100%;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+#footer a {
+  color: inherit;
+}
+
+#footer ion-icon {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#copyright {
+  font-size: 10px;
+  padding-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+footer .finally {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #header,
+  #header .maxwidht,
+  #subheader,
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  #subheader {
+    padding: 0px;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  nav a,
+  nav button,
+  .navbutton-contact {
+    width: 100%;
+    max-width: 300px;
+  }
+  #s-header {
+    margin-top: 60px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #s-header h1 {
+    font-size: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+  }
+  #s-header .imgh2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  #s-header h2 {
+    margin: 20px 0;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  #s-header button {
+    margin: 0 auto;
+    display: block;
+  }
+  #produtos-geral {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .navbutton-footer {
+    padding: 12px 40px;
+    font-size: 16px;
+    width: auto;
+  }
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  #copyright {
+    font-size: 10px;
+    padding: 10px;
+  }
+  footer .finally {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+}
+
+/* Ícone do menu hamburguer */
+.menu-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 28px;
+  cursor: pointer;
+  color: #a57765;
+  display: none;
+}
+
+/* Esconde o menu no mobile por padrão */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fef3f1;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+    text-align: center;
+  }
+  .menu a {
+    font-size: 18px;
+    color: #a57765;
+    max-width: 100px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 32px;
+    /* centraliza verticalmente dentro do header de 100px */
+  }
+  /* Quando o checkbox estiver marcado, exibe o menu */
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Esconde o checkbox */
+#menu-toggle {
+  display: none;
+}
+
+#s-header a {
+  text-decoration: none;
+}
+
+#subheader img {
+  -webkit-backdrop-filter: opacity(80%);
+          backdrop-filter: opacity(80%);
+}
+/*# sourceMappingURL=index.css.map */
