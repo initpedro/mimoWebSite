@@ -2,12 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: opacity 0.8s ease-out, -webkit-transform 0.8s ease-out, -webkit-filter 0.8s ease-out;
-  transition: opacity 0.8s ease-out, -webkit-transform 0.8s ease-out, -webkit-filter 0.8s ease-out;
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out, -webkit-transform 0.8s ease-out, -webkit-filter 0.8s ease-out;
+  box-sizing: border-box;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
 }
 
 html {
@@ -20,21 +16,15 @@ body {
   background-image: url(https://i.postimg.cc/tJQDNhRP/fundo-ground-1.png);
   opacity: 1;
   width: 100%;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
-  -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s ease-out;
-  transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s ease-out;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s ease-out;
+  filter: blur(0px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
   background-size: cover;
 }
 
 body.loaded {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-filter: blur(0);
-          filter: blur(0);
+  transform: translateY(0);
+  filter: blur(0);
 }
 
 ::-webkit-scrollbar {
@@ -51,40 +41,26 @@ body.loaded {
 }
 
 #header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 100px;
   margin: auto;
   font-size: 18px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
-  background-color: #fef3f1;
-  /* Fundo semitransparente */
+  background-color: #fef3f1; /* Fundo semitransparente */
   z-index: 111;
 }
 
 #header .maxwidht {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   max-width: 1028px;
   width: 100%;
   height: 100px;
@@ -93,8 +69,6 @@ body.loaded {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   margin-right: 30px;
@@ -103,16 +77,12 @@ nav {
 nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.568);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 nav a:hover {
   color: #a57765;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 nav button {
@@ -121,18 +91,14 @@ nav button {
   background-color: transparent;
   color: #c58c84;
   padding: 9px 17px;
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  transition: transform 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
   cursor: pointer;
 }
 
 nav button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   background-color: #c58c84;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .navbutton-contact {
@@ -140,43 +106,29 @@ nav button:hover {
   background-color: #111;
   color: #ffffff;
   padding: 9px 17px;
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  transition: transform 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
   cursor: pointer;
 }
 
 .h2button .navbutton-contact:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   background-color: #c58c84;
-  color: white;
+  color: rgb(255, 255, 255);
   border: #c58c84 1px solid;
 }
 
 #s-header h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #916350;
 }
 
 #s-header .imgh2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 80px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #s-header h2 {
@@ -200,26 +152,18 @@ nav button:hover {
 }
 
 #subheader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 150px;
   margin: auto;
   font-size: 18px;
-  position: -webkit-sticky;
   position: sticky;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
-  background-color: #ffeeeb;
-  /* Fundo semitransparente */
+  background-color: #ffeeeb; /* Fundo semitransparente */
   margin-top: 80px;
 }
 
@@ -229,24 +173,15 @@ nav button:hover {
 }
 
 #produtos-geral {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 60px;
   gap: 50px;
 }
 
 #produtos-meio {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #produtos-meio h1 {
@@ -266,17 +201,13 @@ nav button:hover {
   background-color: #000000;
   color: #ffffff;
   padding: 9px 200px;
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  transition: transform 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
   cursor: pointer;
   margin-top: 40px;
 }
 
 .navbutton-footer:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   background-color: #c58c84;
   border: 1px solid #c58c84;
   color: #ffffff;
@@ -284,45 +215,27 @@ nav button:hover {
 }
 
 .buttonfooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   margin: auto;
   font-size: 18px;
-  position: -webkit-sticky;
   position: sticky;
-  background-color: #ffeeeb;
-  /* Fundo semitransparente */
+  background-color: #ffeeeb; /* Fundo semitransparente */
   margin-top: 80px;
 }
 
 #footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   height: 100%;
   padding-bottom: 40px;
@@ -335,8 +248,7 @@ footer {
 }
 
 #footer ion-icon {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -344,12 +256,8 @@ footer {
 #copyright {
   font-size: 10px;
   padding-bottom: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -360,12 +268,8 @@ footer {
 }
 
 footer .finally {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 40px;
   font-weight: 600;
 }
@@ -375,22 +279,19 @@ footer .finally {
   #header .maxwidht,
   #subheader,
   #footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
     text-align: center;
     padding: 10px 20px;
+  }
+  #s-header .h2button h2 {
+    max-width: 250px;
   }
   #subheader {
     padding: 0px;
   }
   nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 20px 0;
   }
@@ -408,16 +309,11 @@ footer .finally {
   }
   #s-header h1 {
     font-size: 24px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 0;
   }
   #s-header .imgh2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 40px;
   }
   #s-header h2 {
@@ -430,13 +326,8 @@ footer .finally {
     display: block;
   }
   #produtos-geral {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
     padding: 0 20px;
   }
@@ -446,10 +337,7 @@ footer .finally {
     width: auto;
   }
   #footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   #copyright {
@@ -461,11 +349,8 @@ footer .finally {
     font-size: 14px;
   }
 }
-
 /* Ícone do menu hamburguer */
 .menu-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 28px;
   cursor: pointer;
@@ -477,10 +362,7 @@ footer .finally {
 @media (max-width: 768px) {
   .menu {
     display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: #fef3f1;
     position: absolute;
     top: 100px;
@@ -499,23 +381,15 @@ footer .finally {
     display: block;
     position: absolute;
     left: 10px;
-    top: 32px;
-    /* centraliza verticalmente dentro do header de 100px */
+    top: 32px; /* centraliza verticalmente dentro do header de 100px */
   }
   /* Quando o checkbox estiver marcado, exibe o menu */
   #menu-toggle:checked + .menu-icon + .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
 }
-
 /* Esconde o checkbox */
 #menu-toggle {
   display: none;
@@ -529,4 +403,110 @@ footer .finally {
   -webkit-backdrop-filter: opacity(80%);
           backdrop-filter: opacity(80%);
 }
-/*# sourceMappingURL=index.css.map */
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fef3f1;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+    text-align: center;
+  }
+  .menu a {
+    font-size: 18px;
+    color: #a57765;
+    max-width: 100px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 32px; /* centraliza verticalmente dentro do header de 100px */
+  }
+  /* Quando o checkbox estiver marcado, exibe o menu */
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  #header,
+  #header .maxwidht,
+  #subheader,
+  #footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  #s-header .h2button h2 {
+    max-width: 250px;
+  }
+  #subheader {
+    padding: 0px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  nav a,
+  nav button,
+  .navbutton-contact {
+    width: 100%;
+    max-width: 300px;
+  }
+  #s-header {
+    margin-top: 60px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #s-header h1 {
+    font-size: 24px;
+    justify-content: center;
+    margin-top: 0;
+  }
+  #s-header .imgh2 {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  #s-header h2 {
+    margin: 20px 0;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  #s-header button {
+    margin: 0 auto;
+    display: block;
+  }
+  #produtos-geral {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .navbutton-footer {
+    padding: 12px 40px;
+    font-size: 16px;
+    width: auto;
+  }
+  #footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #copyright {
+    font-size: 10px;
+    padding: 10px;
+  }
+  footer .finally {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=index.css.map */
